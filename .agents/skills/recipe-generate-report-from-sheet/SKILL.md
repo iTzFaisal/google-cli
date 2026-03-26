@@ -1,14 +1,18 @@
 ---
 name: recipe-generate-report-from-sheet
-version: 1.0.0
 description: "Read data from a Google Sheet and create a formatted Google Docs report."
 metadata:
+  version: 0.22.3
   openclaw:
     category: "recipe"
     domain: "productivity"
     requires:
-      bins: ["gws"]
-      skills: ["gws-sheets", "gws-docs", "gws-drive"]
+      bins:
+        - gws
+      skills:
+        - gws-sheets
+        - gws-docs
+        - gws-drive
 ---
 
 # Generate a Google Docs Report from Sheet Data
@@ -19,7 +23,7 @@ Read data from a Google Sheet and create a formatted Google Docs report.
 
 ## Steps
 
-1. Read the data: `gws sheets +read --spreadsheet-id SHEET_ID --range 'Sales!A1:D'`
+1. Read the data: `gws sheets +read --spreadsheet SHEET_ID --range "Sales!A1:D"`
 2. Create the report doc: `gws docs documents create --json '{"title": "Sales Report - January 2025"}'`
 3. Write the report: `gws docs +write --document-id DOC_ID --text '## Sales Report - January 2025
 

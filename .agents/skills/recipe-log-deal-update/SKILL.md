@@ -1,14 +1,17 @@
 ---
 name: recipe-log-deal-update
-version: 1.0.0
 description: "Append a deal status update to a Google Sheets sales tracking spreadsheet."
 metadata:
+  version: 0.22.3
   openclaw:
     category: "recipe"
     domain: "sales"
     requires:
-      bins: ["gws"]
-      skills: ["gws-sheets", "gws-drive"]
+      bins:
+        - gws
+      skills:
+        - gws-sheets
+        - gws-drive
 ---
 
 # Log Deal Update to Sheet
@@ -20,6 +23,6 @@ Append a deal status update to a Google Sheets sales tracking spreadsheet.
 ## Steps
 
 1. Find the tracking sheet: `gws drive files list --params '{"q": "name = '\''Sales Pipeline'\'' and mimeType = '\''application/vnd.google-apps.spreadsheet'\''"}'`
-2. Read current data: `gws sheets +read --spreadsheet-id SHEET_ID --range 'Pipeline!A1:F'`
-3. Append new row: `gws sheets +append --spreadsheet-id SHEET_ID --range 'Pipeline' --values '["2024-03-15", "Acme Corp", "Proposal Sent", "$50,000", "Q2", "jdoe"]'`
+2. Read current data: `gws sheets +read --spreadsheet SHEET_ID --range "Pipeline!A1:F"`
+3. Append new row: `gws sheets +append --spreadsheet SHEET_ID --range 'Pipeline' --values '["2024-03-15", "Acme Corp", "Proposal Sent", "$50,000", "Q2", "jdoe"]'`
 

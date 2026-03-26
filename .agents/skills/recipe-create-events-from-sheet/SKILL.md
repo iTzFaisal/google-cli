@@ -1,14 +1,17 @@
 ---
 name: recipe-create-events-from-sheet
-version: 1.0.0
 description: "Read event data from a Google Sheets spreadsheet and create Google Calendar entries for each row."
 metadata:
+  version: 0.22.3
   openclaw:
     category: "recipe"
     domain: "productivity"
     requires:
-      bins: ["gws"]
-      skills: ["gws-sheets", "gws-calendar"]
+      bins:
+        - gws
+      skills:
+        - gws-sheets
+        - gws-calendar
 ---
 
 # Create Google Calendar Events from a Sheet
@@ -19,6 +22,6 @@ Read event data from a Google Sheets spreadsheet and create Google Calendar entr
 
 ## Steps
 
-1. Read event data: `gws sheets +read --spreadsheet-id SHEET_ID --range 'Events!A2:D'`
-2. For each row, create a calendar event: `gws calendar +insert --summary 'Team Standup' --start '2025-01-20T09:00' --duration 30 --attendees alice@company.com,bob@company.com`
+1. Read event data: `gws sheets +read --spreadsheet SHEET_ID --range "Events!A2:D"`
+2. For each row, create a calendar event: `gws calendar +insert --summary 'Team Standup' --start '2026-01-20T09:00:00' --end '2026-01-20T09:30:00' --attendee alice@company.com --attendee bob@company.com`
 
