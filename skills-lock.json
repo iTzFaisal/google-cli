@@ -1,6 +1,11 @@
 {
   "version": 1,
   "skills": {
+    "docx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "6962db07127ee540a56e4677f65576d0727668a1d67f7da8bc978f10791c2bfe"
+    },
     "gws-admin-reports": {
       "source": "googleworkspace/cli",
       "sourceType": "github",
@@ -221,6 +226,11 @@
       "sourceType": "github",
       "computedHash": "846193775e104e3eb5b58e2ace92e9b0b429b2d1322dc8ea606c7b6bee925375"
     },
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "cfbc539377088ca7e44a813b30c306327385bbd973cd7a721e1743f60837dd62"
+    },
     "persona-content-creator": {
       "source": "googleworkspace/cli",
       "sourceType": "github",
@@ -270,6 +280,11 @@
       "source": "googleworkspace/cli",
       "sourceType": "github",
       "computedHash": "51e18cad87a151aa47d7e8d4f993ea3ee6dd2f95bb126934ff011d40eb129527"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "6b8b859d26f93aa059c9870d1ab76b44ab69e3d6757ce4a03cc94cb760888073"
     },
     "recipe-backup-sheet-as-csv": {
       "source": "googleworkspace/cli",
@@ -475,6 +490,11 @@
       "source": "googleworkspace/cli",
       "sourceType": "github",
       "computedHash": "612d6ed7be524d8b1d88ad7bd70312af9159b2d371ce78f4292a302dc1c4e8d0"
+    },
+    "xlsx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "efd0c8011cf0677d8075cf93867ecec804f9a8754a777e1d2fdb46197e9c247f"
     }
   }
 }
